@@ -1,0 +1,37 @@
+.row {
+    $root: &;
+    margin: 30px 0;
+
+    &__container {
+        display: flex;
+
+        &-el {
+            width: 50%;
+            padding: 20px;
+
+           &--red {
+               background-color: red;
+           }
+
+            &--green {
+                background-color: green;
+            }
+
+            &--yellow {
+                background-color: yellow;
+            }
+
+          &--none {
+            display: none;
+          }
+        }
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        &-button {
+        }
+    }
+}
